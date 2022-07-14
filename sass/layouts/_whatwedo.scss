@@ -1,0 +1,42 @@
+.whatwedo {
+  // @extend %section;
+  @include section(94px);
+
+  padding-top: 47px;
+}
+
+.whatwedo__list {
+  padding-bottom: 47px;
+  margin: -15px;
+}
+
+.what-we-do-item {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 100%;
+}
+
+.what-we-do-text {
+  position: absolute;
+
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  // text-align: center;
+  // text-transform: uppercase;
+
+  @include fonts(700, 14px, 1.14, 0.03em);
+
+  color: var(--white-color);
+}

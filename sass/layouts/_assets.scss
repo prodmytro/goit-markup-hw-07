@@ -1,0 +1,40 @@
+.asset {
+  // @extend %section;
+  @include section(94px);
+
+  padding-bottom: 47px;
+}
+
+.asset__list {
+  --item: 4;
+  margin: -15px;
+}
+
+.asset__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.asset__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.asset__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}

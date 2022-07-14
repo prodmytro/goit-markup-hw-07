@@ -19,36 +19,40 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
     <header class="header">
-      <div class="container header-cotainer">
-        <a class="header-logo link" href="./"><span class="logo-prefix">Web</span>Studio</a>
-        <nav>
-          <ul class="site-nav list">
-            <li class="site-nav-item">
-              <a href="./" class="current link">Студия</a>
+      <div class="container header__cotainer">
+        <a class="logo header__logo logo__black link" href="./"
+          ><span class="logo-prefix">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./" class="nav__link nav__link--current link">Студия</a>
             </li>
-            <li class="site-nav-item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link">Портфолио</a>
             </li>
-            <li class="site-nav-item">
-              <a href="" class="link">Контакты</a>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="header-contacts-item">
-            <a href="mailto:info@devstudio.com" class="header-contacts-link link">
-              <svg width="16" height="12" class="header-contacts-icon">
+
+        <ul class="header__contacts list">
+          <li class="header__contacts-item">
+            <a href="mailto:info@devstudio.com" class="header__contacts-link link">
+              <svg width="16" height="12" class="header__contacts-icon">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-contacts-item">
-            <a href="tel:+380961111111" class="header-contacts-link link">
-              <svg width="10" height="16" class="header-contacts-icon">
+          <li class="header__contacts-item">
+            <a href="tel:+380961111111" class="header__contacts-link link">
+              <svg width="10" height="16" class="header__contacts-icon">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -58,68 +62,68 @@
       </div>
     </header>
     <main>
-      <section class="section hero overlay">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
-      <section class="section asset">
+      <section class="asset">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="asset-list card-set list">
-            <li class="card-set-item">
-              <div class="asset-box-icon">
-                <svg width="70" height="70" class="asset-list-img">
+          <ul class="asset__list card-set list">
+            <li class="card-set__item">
+              <div class="asset__wrapper">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="asset-title">Внимание к деталям</h3>
-              <p class="asset-text">
+              <h3 class="asset__title">Внимание к деталям</h3>
+              <p class="asset__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="card-set-item">
-              <div class="asset-box-icon">
-                <svg width="70" height="70" class="asset-list-img">
+            <li class="card-set__item">
+              <div class="asset__wrapper">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="asset-title">Пунктуальность</h3>
-              <p class="asset-text">
+              <h3 class="asset__title">Пунктуальность</h3>
+              <p class="asset__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="card-set-item">
-              <div class="asset-box-icon">
-                <svg width="70" height="70" class="asset-list-img">
+            <li class="card-set__item">
+              <div class="asset__wrapper">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="asset-title">Планирование</h3>
-              <p class="asset-text">
+              <h3 class="asset__title">Планирование</h3>
+              <p class="asset__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="card-set-item">
-              <div class="asset-box-icon">
-                <svg width="70" height="70" class="asset-list-img">
+            <li class="card-set__item">
+              <div class="asset__wrapper">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="asset-title">Современные технологии</h3>
-              <p class="asset-text">
+              <h3 class="asset__title">Современные технологии</h3>
+              <p class="asset__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section whatwedo">
+      <section class="whatwedo">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="whatwedo-list card-set list">
-            <li class="card-set-item what-we-do-item">
+          <ul class="whatwedo__list card-set list">
+            <li class="card-set__item what-we-do-item">
               <img
                 src="./images/box1.png"
                 class="what-we-do-img"
@@ -129,7 +133,7 @@
               />
               <div class="label"><p class="what-we-do-text">Десктопные приложения</p></div>
             </li>
-            <li class="card-set-item what-we-do-item">
+            <li class="card-set__item what-we-do-item">
               <img
                 src="./images/box2.png"
                 class="what-we-do-img"
@@ -139,7 +143,7 @@
               />
               <div class="label"><p class="what-we-do-text">Мобильные приложения</p></div>
             </li>
-            <li class="card-set-item what-we-do-item">
+            <li class="card-set__item what-we-do-item">
               <img
                 src="./images/box3.png"
                 class="what-we-do-img"
@@ -152,38 +156,38 @@
           </ul>
         </div>
       </section>
-      <section class="section our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team-list card-set list">
-            <li class="card-set-item our-team-item">
+            <li class="card-set__item our-team-item">
               <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Игорь Демьяненко</h3>
                 <p class="our-team-position">Product Designer</p>
                 <ul class="our-team-soc card-set list">
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-insta"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-twttr"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-fb"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -193,34 +197,34 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set-item our-team-item">
+            <li class="card-set__item our-team-item">
               <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260" />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Ольга Репина</h3>
                 <p class="our-team-position">Frontend Developer</p>
                 <ul class="our-team-soc card-set list">
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-insta"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-twttr"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-fb"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -230,34 +234,34 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set-item our-team-item">
+            <li class="card-set__item our-team-item">
               <img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" height="260" />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Николай Тарасов</h3>
                 <p class="our-team-position">Marketing</p>
                 <ul class="our-team-soc card-set list">
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-insta"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-twttr"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-fb"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -267,34 +271,34 @@
                 </ul>
               </div>
             </li>
-            <li class="card-set-item our-team-item">
+            <li class="card-set__item our-team-item">
               <img src="./images/mikhail.jpg" alt="Михаил Ермаков" width="270" height="260" />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Михаил Ермаков</h3>
                 <p class="our-team-position">UI Designer</p>
                 <ul class="our-team-soc card-set list">
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-insta"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-twttr"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-fb"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="our-team-soc-item card-set-item">
+                  <li class="our-team-soc-item card-set__item">
                     <a href="#" class="our-team-soc-link">
                       <svg class="our-team-soc-icon">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -307,46 +311,46 @@
           </ul>
         </div>
       </section>
-      <section class="section perm-clients">
+      <section class="perm-clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="perm-clients-list card-set list">
-            <li class="perm-client-item card-set-item">
+            <li class="perm-client-item card-set__item">
               <a href="#" class="perm-clients-link">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-client-1" class="perm-clients-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="perm-client-item card-set-item">
+            <li class="perm-client-item card-set__item">
               <a href="#" class="perm-clients-link">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-client-2" class="perm-clients-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="perm-client-item card-set-item">
+            <li class="perm-client-item card-set__item">
               <a href="#" class="perm-clients-link">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-client-3" class="perm-clients-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="perm-client-item card-set-item">
+            <li class="perm-client-item card-set__item">
               <a href="#" class="perm-clients-link">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-client-4" class="perm-clients-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="perm-client-item card-set-item">
+            <li class="perm-client-item card-set__item">
               <a href="#" class="perm-clients-link">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-client-5" class="perm-clients-icon"></use>
                 </svg>
               </a>
             </li>
-            <li class="perm-client-item card-set-item">
+            <li class="perm-client-item card-set__item">
               <a href="#" class="perm-clients-link">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-client-6" class="perm-clients-icon"></use>
@@ -357,11 +361,13 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer">
           <div class="footer-left">
-            <a href="./" class="footer-logo link"><span class="logo-prefix">Web</span>Studio</a>
+            <a href="./" class="logo logo__white link"
+              ><span class="logo-prefix">Web</span>Studio</a
+            >
             <address class="footer-addr">
               <ul class="footer-contacts list">
                 <li class="footer-contacts-item adress">г. Киев, пр-т Леси Украинки, 26</li>
@@ -379,28 +385,28 @@
           <div class="footer-socials">
             <h2 class="footer-socials-header">присоединяйтесь</h2>
             <ul class="footer-soc-set card-set list">
-              <li class="card-set-item">
+              <li class="card-set__item">
                 <a href="#" class="footer-soc-link">
                   <svg class="footer-soc-icon">
                     <use href="./images/icons.svg#icon-insta"></use>
                   </svg>
                 </a>
               </li>
-              <li class="card-set-item">
+              <li class="card-set__item">
                 <a href="#" class="footer-soc-link">
                   <svg class="footer-soc-icon">
                     <use href="./images/icons.svg#icon-twttr"></use>
                   </svg>
                 </a>
               </li>
-              <li class="card-set-item">
+              <li class="card-set__item">
                 <a href="#" class="footer-soc-link">
                   <svg class="footer-soc-icon">
                     <use href="./images/icons.svg#icon-fb"></use>
                   </svg>
                 </a>
               </li>
-              <li class="card-set-item">
+              <li class="card-set__item">
                 <a href="#" class="footer-soc-link">
                   <svg class="footer-soc-icon">
                     <use href="./images/icons.svg#icon-linkedin"></use>

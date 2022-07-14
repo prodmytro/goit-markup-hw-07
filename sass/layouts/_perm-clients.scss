@@ -1,0 +1,36 @@
+.perm-clients {
+  @include section(94px);
+}
+
+.perm-clients-list {
+  --item: 6;
+  --indent: 30px;
+  margin-right: -30px;
+}
+
+.perm-clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.perm-clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  width: 170px;
+  color: var(--icon-fill-color);
+  border: 1px solid var(--icon-fill-color);
+  border-radius: 4px;
+  color: var(--icon-fill-color);
+  transition: color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
+}
+
+.perm-clients-link:hover,
+.perm-clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.perm-clients-icon {
+  fill: currentColor;
+}

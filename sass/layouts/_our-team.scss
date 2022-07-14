@@ -1,0 +1,70 @@
+.our-team {
+  @include section(94px);
+
+  background-color: #f5f4fa;
+}
+
+.our-team-list {
+  --item: 4;
+}
+
+.our-team-item {
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-wrapper {
+  padding: 30px 0;
+}
+
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--second-text-color);
+}
+
+.our-team-position {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
+.our-team-soc {
+  margin-top: 16px;
+  --item: 4;
+  --indent: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.our-team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-fill-color);
+  transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
+}
+
+.our-team-soc-link:hover,
+.our-team-soc-link:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.our-team-soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
