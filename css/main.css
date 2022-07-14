@@ -36,7 +36,7 @@
   margin: calc(-1 * var(--indent) / 2);
 }
 
-.card-set__item {
+.card-set-item {
   -ms-flex-preferred-size: calc((100% - var(--indent) * var(--item)) / var(--item));
       flex-basis: calc((100% - var(--indent) * var(--item)) / var(--item));
   margin: calc(var(--indent) / 2);
